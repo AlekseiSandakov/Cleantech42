@@ -14,18 +14,18 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #fff;
+            color: #e0e0e0;
+            background: #1a1a1a;
         }
         
         header {
-            background: #fff;
+            background: #000;
             padding: 0.15rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
             border-bottom: 3px solid #FFC107;
         }
         
@@ -62,38 +62,41 @@
         }
         
         .nav-links a {
-            color: #4a4a4a;
+            color: #FFC107;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
         }
         
         .nav-links a:hover {
-            color: #FFC107;
+            color: #FFD54F;
         }
         
         .hero {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
             padding: 130px 2rem 100px;
             text-align: center;
             color: #fff;
+            border-bottom: 3px solid #FFC107;
         }
         
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: #FFC107;
         }
         
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            color: #e0e0e0;
         }
         
         .cta-button {
-            background: #fff;
-            color: #FFA500;
+            background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+            color: #000;
             padding: 1rem 2.5rem;
             border: none;
             border-radius: 50px;
@@ -101,12 +104,12 @@
             font-weight: bold;
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
         }
         
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
         }
         
         .cta-button:active {
@@ -117,14 +120,14 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 2rem;
-            background: #fff;
+            background: #1a1a1a;
         }
         
         h2 {
             font-size: 2.5rem;
             text-align: center;
             margin-bottom: 3rem;
-            color: #333;
+            color: #FFC107;
         }
         
         .services-grid {
@@ -134,13 +137,13 @@
         }
         
         .service-card {
-            background: #f5f5f5;
+            background: #2a2a2a;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 4px solid #FFD700;
-            color: #333;
+            border-top: 4px solid #FFC107;
+            color: #e0e0e0;
             position: relative;
             overflow: hidden;
             text-decoration: none;
@@ -223,7 +226,7 @@
             align-items: center;
             padding: 1.5rem 2rem;
             margin-bottom: 1rem;
-            background: #f5f5f5;
+            background: #2a2a2a;
             border-left: 4px solid #FFC107;
             border-radius: 8px;
             transition: all 0.3s;
@@ -231,19 +234,19 @@
         }
         
         .price-item:hover {
-            background: #fff3cd;
+            background: #333;
             transform: translateX(10px);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 15px rgba(255, 193, 7, 0.3);
         }
         
         .price-name {
-            color: #333;
+            color: #e0e0e0;
             font-size: 1.1rem;
             font-weight: 500;
         }
         
         .price-value {
-            color: #FFA500;
+            color: #FFC107;
             font-size: 1.3rem;
             font-weight: bold;
             white-space: nowrap;
@@ -273,10 +276,10 @@
         }
         
         .booking-form {
-            background: #f9f9f9;
+            background: #2a2a2a;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
         }
         
         .form-group {
@@ -286,7 +289,7 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #333;
+            color: #FFC107;
             font-weight: 500;
         }
         
@@ -295,11 +298,13 @@
         .form-group textarea {
             width: 100%;
             padding: 0.8rem;
-            border: 2px solid #ddd;
+            border: 2px solid #444;
             border-radius: 8px;
             font-size: 1rem;
             font-family: inherit;
             transition: border-color 0.3s;
+            background: #1a1a1a;
+            color: #e0e0e0;
         }
         
         .form-group input:focus,
@@ -319,7 +324,7 @@
             gap: 0.5rem;
             cursor: pointer;
             font-size: 0.9rem;
-            color: #666;
+            color: #b0b0b0;
         }
         
         .checkbox-label input[type="checkbox"] {
@@ -330,8 +335,8 @@
         
         .submit-button {
             width: 100%;
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            color: #fff;
+            background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+            color: #000;
             padding: 1rem 2rem;
             border: none;
             border-radius: 8px;
@@ -339,12 +344,12 @@
             font-weight: bold;
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
         }
         
         .submit-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 165, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
         }
         
         .submit-button:active {
@@ -362,22 +367,22 @@
         }
         
         .service-card h3 {
-            color: #FFA500;
+            color: #FFC107;
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
         
         .service-card p {
-            color: #666;
+            color: #b0b0b0;
         }
         
         .advantages {
-            background: #f9f9f9;
+            background: #2a2a2a;
             padding: 4rem 2rem;
         }
         
         .advantages h2 {
-            color: #333;
+            color: #FFC107;
         }
         
         .advantages-grid {
@@ -391,7 +396,7 @@
         .advantage-item {
             text-align: center;
             padding: 1.5rem;
-            color: #333;
+            color: #e0e0e0;
         }
         
         .advantage-number {
@@ -402,14 +407,15 @@
         }
         
         .contact {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            color: #fff;
+            background: #2a2a2a;
+            color: #e0e0e0;
             text-align: center;
             padding: 4rem 2rem;
+            border-top: 3px solid #FFC107;
         }
         
         .contact h2 {
-            color: #fff;
+            color: #FFC107;
         }
         
         .contact-info {
@@ -432,17 +438,18 @@
         }
         
         .contact-item a {
-            color: #fff;
+            color: #FFC107;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: 500;
         }
         
         footer {
-            background: #333;
-            color: #fff;
+            background: #000;
+            color: #b0b0b0;
             text-align: center;
             padding: 2rem;
+            border-top: 3px solid #FFC107;
         }
         
         @media (max-width: 768px) {
@@ -584,8 +591,8 @@
         </div>
     </section>
 
-    <section id="prices" style="background: #fff; padding: 4rem 2rem;">
-        <h2 style="color: #333;">Стоимость услуг</h2>
+    <section id="prices" style="background: #1a1a1a; padding: 4rem 2rem;">
+        <h2 style="color: #FFC107;">Стоимость услуг</h2>
         <div style="max-width: 800px; margin: 0 auto;">
             <div class="price-item" id="price-1">
                 <span class="price-name">Водородная очистка ДВС</span>
@@ -664,9 +671,9 @@
         </div>
     </section>
 
-    <section id="reviews" style="padding: 4rem 2rem; background: #f9f9f9;">
+    <section id="reviews" style="padding: 4rem 2rem; background: #2a2a2a;">
         <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 style="color: #333;">Отзывы наших клиентов</h2>
+            <h2 style="color: #FFC107;">Отзывы наших клиентов</h2>
             <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 3rem;">
                 <a href="https://2gis.ru/novokuznetsk/firm/70000001094186646/tab/reviews?m=87.095954%2C53.767802%2F16" target="_blank" class="review-link">
                     <img src="2gis.svg" alt="2ГИС" class="review-logo">
@@ -681,10 +688,10 @@
         </div>
     </section>
 
-    <section id="booking" style="padding: 4rem 2rem; background: #fff;">
+    <section id="booking" style="padding: 4rem 2rem; background: #1a1a1a;">
         <div style="max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #333;">Запись на обслуживание</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 2rem;">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+            <h2 style="color: #FFC107;">Запись на обслуживание</h2>
+            <p style="text-align: center; color: #b0b0b0; margin-bottom: 2rem;">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
             
             <form class="booking-form" id="bookingForm">
                 <div class="form-group">
@@ -741,7 +748,7 @@
                 
                 <button type="submit" class="submit-button">Отправить заявку</button>
                 
-                <p style="text-align: center; color: #999; font-size: 0.9rem; margin-top: 1rem;">
+                <p style="text-align: center; color: #888; font-size: 0.9rem; margin-top: 1rem;">
                     * Обязательные поля<br>
                     Ваши данные защищены и не передаются третьим лицам
                 </p>
@@ -751,10 +758,10 @@
         </div>
     </section>
 
-    <section id="privacy-policy" style="padding: 4rem 2rem; background: #f9f9f9;">
+    <section id="privacy-policy" style="padding: 4rem 2rem; background: #2a2a2a;">
         <div style="max-width: 800px; margin: 0 auto;">
-            <h2 style="color: #333;">Политика конфиденциальности</h2>
-            <div style="color: #666; line-height: 1.8;">
+            <h2 style="color: #FFC107;">Политика конфиденциальности</h2>
+            <div style="color: #b0b0b0; line-height: 1.8;">
                 <p style="margin-bottom: 1rem;">
                     <strong>1. Общие положения</strong><br>
                     Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта Cleantech42.
@@ -789,7 +796,7 @@
 
     <section id="contact" class="contact">
         <h2>Свяжитесь с нами</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Мы всегда рады помочь вам с обслуживанием вашего автомобиля</p>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #b0b0b0;">Мы всегда рады помочь вам с обслуживанием вашего автомобиля</p>
         <div class="contact-info">
             <div class="contact-item">
                 <div class="contact-item-icon">📞</div>
@@ -801,7 +808,7 @@
             </div>
             <div class="contact-item">
                 <div class="contact-item-icon">📍</div>
-                <span style="color: #fff; font-size: 1.2rem;">г. Новокузнецк, Площадь Побед, 2</span>
+                <span style="color: #e0e0e0; font-size: 1.2rem;">г. Новокузнецк, Площадь Побед, 2</span>
             </div>
         </div>
     </section>
